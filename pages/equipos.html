@@ -1,12 +1,133 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="es">
+
 <head>
-<title>Page Title</title>
+    <meta charset="UTF-8">
+    <title>desMARCAdos - Equipos</title>
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
 </head>
+
 <body>
+    
+    <!-- Barra de navegación -->
+    <nav>
 
-<h1>Real Madrid</h1>
-<p>This is a paragraph.</p>
+    <nav>
+        <img src="../assets/img/logo_nav.png" alt="Logo" >
 
+        <ul>
+            <li> <a href="../index.html">Inicio</a> </li>
+            <li> <a href="noticias.html">Noticias</a> </li>
+            <li> <a href="calendario.html">Calendario</a> </li>
+            <li> <a href="equipos.html">Equipos</a> </li>
+            <li> <a href="clasificacion.html">Clasificación</a> </li>
+            <li><a href="sobrenosotros.html">Sobre nosotros</a></li>
+        </ul>
+
+    </nav>
+
+    <header>
+        <h1>Equipos</h1>
+    </header>
+    
+    <!-- Contenido principal -->
+    <main>
+
+        <!-- 
+        Es recomendable separar el <section> y el <aside> porque:
+        1. **Semántica**: El <section> contiene el contenido principal relacionado con la clasificación de los equipos, mientras que el <aside> tiene contenido secundario (explicación de los campos). Esto ayuda a que el código sea más estructurado y accesible.
+        2. **Estilos y Layout**: Separar estos elementos permite aplicar estilos de manera más específica. Por ejemplo, puedes aplicar diferentes estilos a la tabla y al apartado de explicación sin interferir en la estructura.
+        3. **Accesibilidad**: Un código bien estructurado facilita que los usuarios con tecnologías de asistencia (como lectores de pantalla) comprendan mejor el contenido. El uso adecuado de estas etiquetas mejora la experiencia de navegación.
+        -->
+
+        <section>
+
+            <!-- Lista de equipos -->
+            
+            <ul>
+                    <li><a href="equipo_real_madrid.html">Real Madrid</a></li>
+                    <li><a href="equipo_fc_barcelona.html">FC Barcelona</a></li>
+                    <li><a href="equipo_atletico_madrid.html">Atlético de Madrid</a></li>
+                    <li><a href="equipo_sevilla.html">Sevilla FC</a></li>
+                    <li><a href="equipo_valencia.html">Valencia CF</a></li>
+                    <li><a href="equipo_real_betis.html">Real Betis</a></li>
+            </ul>
+
+        </section>
+
+            <!-- Resumen de clasificación -->
+            <aside>
+
+                <h2>Resumen Clasificación</h2>
+
+                <table>
+
+                    <thead>
+                        <tr>
+                        <th>Posición</th>
+                        <th>Equipo</th>
+                        <th>Puntos</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                        <td>1</td>
+                        <td>Real Madrid</td>
+                        <td>60 pts</td>
+
+                        </tr>
+
+                        <tr>
+
+                        <td>2</td>
+                        <td>FC Barcelona</td>
+                        <td>58 pts</td>
+
+                        </tr>
+
+                        <tr>
+
+                        <td>3</td>
+                        <td>Atlético de Madrid</td>
+                        <td>55 pts</td>
+
+                        </tr>
+
+                        <tr>
+
+                        <td>4</td>
+                        <td>Sevilla FC</td>
+                        <td>50 pts</td>
+
+                        </tr>
+
+                        <tr>
+
+                        <td>5</td>
+                        <td>Real Betis</td>
+                        <td>48 pts</td>
+
+                        </tr>
+
+                    </tbody>
+
+                    </table>
+                
+            </aside>
+
+
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 desMARCAdos. Todos los derechos reservados.</p>
+        <p><a href="https://unsplash.com/" target="_blank">Imágenes de Unsplash</a></p>
+    </footer>
+    
 </body>
+
+
 </html>
