@@ -1,0 +1,75 @@
+
+@font-face {
+    font-family: 'Orbitron';
+    src: url('../fonts/Orbitron-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    font-family: 'Orbitron';
+    text-align: center;
+    background-color: rgb(F,F,F);
+}
+
+.subcabecera { 
+    display: flex;
+    gap: 55vw;
+    color: white;
+    background-color: rgb(255, 0, 0);
+    padding-left: 8rem;
+    padding-right: 2rem;
+    height: 11vh;
+    align-items: center;
+}
+
+a:visited {
+    color: inherit;
+}
+
+a.sobrenosotros{
+    text-decoration: none;
+}
+
+header figure {
+    height: 22vh;
+}
+
+
+section p {
+    font-weight: bold;
+}
+
+/* Contenedor de imágenes */
+section figure {
+    position: relative;
+    display: inline-block;
+}
+
+section figure img {
+    width: 300px; /* Ajusta según necesidad */
+    height: auto;
+    border-radius: 10px;
+    display: block;
+}
+
+/* Títulos sobre imágenes */
+section figure::before {
+    content: attr(data-title); /* Se obtiene el título desde el atributo */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    background: #222;
+    color: white;
+    padding: 15px;
+}
