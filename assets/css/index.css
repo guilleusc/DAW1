@@ -12,17 +12,31 @@ body {
     padding: 0px;
     margin: 0px;
 }
-
-.subcabecera { 
-    display: flex;
-    gap: 55vw;
+.cabecera{
+    box-sizing: border-box;
+    height: 22vh;
+}
+.subcabecera {
+    font-size: 18px;
+    box-sizing: border-box;
+    height: 11vh;
     color: white;
     background-color: rgb(255, 0, 0);
-    padding-left: 8rem;
-    padding-right: 2rem;
-    height: 11vh;
-    align-items: center;
+    padding-left: 10rem;
+    padding-right: 8rem;
+    padding-top: 3vh;
 }
+
+.text1{
+    display: inline;
+    float: left;
+}
+
+.text2{
+    display: inline;
+    float: right;
+}
+
 
 a:visited {
     color: inherit;
@@ -32,16 +46,46 @@ a.sobrenosotros{
     text-decoration: none;
 }
 
-header figure {
-    height: 22vh;
-}
-
 
 section p {
     font-weight: bold;
 }
+/*
+.contenedorImagenes {
+    margin: 0;
+    padding: 0;
+}
 
+.im1{
+    padding: 0px;
+    margin: 0px;
+    float: left;
+    width: 50%;
+}
+.im2{
+    padding: 0px;
+    margin: 0px;
+    float: right;
+    width: 50%;
+}
 
+.im3{
+    padding: 0px;
+    margin: 0px;
+    float: left;
+    width: 50%;
+}
+.im4{
+    padding: 0px;
+    margin: 0px;
+    float: right;
+    width: 50%;
+}
+.apartado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}*/
 /* Contenedor de imágenes */
 .im1 {  grid-area: im1; }
 .im2 {  grid-area: im2; }
@@ -63,6 +107,7 @@ section p {
     padding: 0px;
     margin: 0px;
     align-items: center;
+    position: relative;
 }
 
 .contenedorImagenes figure img{
@@ -73,11 +118,15 @@ section p {
 }
 
 .apartado{
-    position: relative;
+    font-size: 48px;
+    position: absolute;
+    top: 35%;
+    left: 35%;
 }
 
 /* Footer */
 footer {
+    float: bottom;
     margin-top: 0px;
     background: #222;
     color: white;
