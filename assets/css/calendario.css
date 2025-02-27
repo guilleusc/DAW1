@@ -1,0 +1,48 @@
+/* Secciones de cada jornada */
+section {
+    width: 48%; /* Cada jornada ocupa casi la mitad del ancho */
+    align-items: center;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Alternar posición de las jornadas */
+section:nth-child(odd) {
+    float: right;
+}
+
+section:nth-child(even) {
+    float: left;
+} 
+
+/* Estilos del título */
+h3 {
+    color: red;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Estilos de las tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Exo 2';
+}
+
+/* Alternar colores de filas */
+table tr:nth-child(even) {
+    background-color: #f8f8f8;
+}
