@@ -1,0 +1,100 @@
+
+main {
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: 8.3%;
+    padding-right: 8.3%;
+}
+aside  {
+    width: 25%;
+    float: right;
+}
+
+#equipos {
+    width: 60%;
+    float: left;
+    margin-bottom: 3%;
+    height: 100vh;
+}
+#equipos ul{
+    width: 100%;
+    font-size: 1.55vw;
+    font-weight: bold;
+    column-count: 2;
+    list-style: none;
+    column-rule: 2px solid black;
+    column-gap: 25%;
+}
+#equipos ul li{
+    line-height: 2.5;
+}
+
+#equipos a {
+    text-decoration: none;
+    color: #FD0000;
+    font-weight: bold;
+}
+
+
+h2 {
+    text-decoration: underline;
+    margin-bottom: 5%;
+    font-size: 1.35vw;
+} 
+
+h1 {
+    font-size: 48px;
+} 
+
+table {
+    font-size: 0.9vw;
+    font-family: 'Exo 2';
+    text-align: center;
+    border-collapse: colllapse;
+    border-spacing: 0;
+    width: 100%;
+    margin-bottom: 5%;
+}
+table tbody tr:nth-child(odd) {
+    background-color: #dddddd;
+}
+
+/* Añadir punto de ruptura a los 992px */
+@media (max-width: 992px) {
+    
+    /* Desactivar floats */
+    #equipos, aside {
+        float: none;
+        width: 100%;
+    }
+
+    table {
+        font-size: 3vw;    
+    }
+
+    h2 {
+        font-size: 3vw;
+    }
+    
+    #equipos {   
+        height: 100%;
+    }
+
+    #equipos ul {
+        font-size: 4vw;
+        column-count: 1; /* Cambiar columnas de 2 a 1 */
+    }
+
+    #equipos ul li {
+        text-align: center;
+    }
+}
+
+
+
+@media (max-height: 600px) {
+    /* Cambios cuando la altura sea menor o igual a 600px */
+    #equipos {   
+        height: 100%;
+    }
+}
