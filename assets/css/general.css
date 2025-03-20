@@ -8,13 +8,14 @@
     para mantener una estructura más organizada y modular.  
 */
 
-/* RESET */
+/* RESET: Elimina los márgenes y paddings predeterminados de todos los elementos  */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Hace que width y height incluyan el padding y border */
 }
 
+/* Importación de una fuente personalizada */
 @font-face {
     font-family: 'Orbitron';
     src: url('../fonts/Orbitron-Regular.ttf');
@@ -24,24 +25,27 @@
 
 /* ESTILOS BASE */
 body {
-    font-family: 'Orbitron';
+    font-family: 'Orbitron'; /* Usa la fuente personalizada */
 
     /* Set a default font-size in percent for the <body> element; works in all browsers */
-    font-size: 100%;
+    font-size: 100%; /* Define el tamaño base del texto */
     
     /* Set the text-color */
-    color: black;
+    color: black; 
 
-    background-color: white;
+    background-color: white; /* Color de fondo */
 }
 
+/* Estilos para el título principal */
 h1 {
-    text-align: start;
-    text-decoration: underline black;
+    font-size: 48px;
+    text-align: start; /* Alineación del texto a la izquierda */
+    text-decoration: underline black; /* Subraya el título en negro */
     margin-bottom: 20px;
     margin-left: 20px;
 }
 
+/* Estilos para el contenido principal */
 main {
     margin-top: 150px; /* Ajusta según la altura de la navbar */
 }
@@ -49,44 +53,150 @@ main {
 /* Barra de navegación */
 .cabecera {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-
+    align-items: center; /* Alinea verticalmente los elementos */
+    justify-content: center; /* Centra los elementos horizontalmente */
     background-color: red;
-
-    position: fixed;
+    position: fixed; /* Hace que la cabecera siempre esté visible en la parte superior */
     top: 0;
     width: 100%;
 }
 
+/* Estilos para el logo dentro de la cabecera */
 .cabecera .logo {
     display: flex;
+    background-color: white;
+    justify-content: center;
 }
 
+/* Asegura que el logo se muestre correctamente */
 .cabecera .logo a {
     display: inline-block;
 }
 
+/* Ajusta el tamaño de la imagen del logo */
 .cabecera .logo img {
     display: block;
-    background-color: white;
-    height: 100%;
+    height: auto;
 }
 
+/* Estilos para la barra de navegación */
+.cabecera nav {
+    width: 100%;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+/* Lista de navegación */
 .cabecera ul {
     display: flex;
-
-    list-style-type: none;
+    justify-content: space-between; /* Espacia los elementos horizontalmente */
+    list-style-type: none; /* Elimina los estilos de lista */
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 
+/* Elementos individuales del menú */
+.cabecera li {
+    /* Cada elemento ocupa aproximadamente 1/6 del ancho total */
+    flex: 0 0 16.66%; 
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Enlaces del menú */
 .cabecera li a {
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
-    text-decoration: none;
+    text-decoration: none; /* Elimina el subrayado */
+}
+
+/* Efecto hover en los enlaces */
+.cabecera li a:hover {
+    filter: brightness(2); /* Aumenta el brillo */
+    text-shadow: 0 0 15px white, 0 0 30px white, 0 0 45px white;
+}
+
+/* ================== ESTILOS RESPONSIVOS ================== */
+
+/* Estilos para pantallas pequeñas (máx. 805px de ancho) */
+/* Estilos Responsivos para el ancho */
+@media screen and (max-width: 805px) {
+    .cabecera {
+        flex-direction: column; /* Apila los elementos verticalmente */
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        background-color: white;
+    }
+
+    .cabecera .logo {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .cabecera nav {
+        width: 100%;
+        background-color: red;
+    }
+
+    /* Cambia el menú a una lista vertical */
+    .cabecera ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .cabecera li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .cabecera li a {
+        display: block;
+        width: 100%;
+        padding: 10px;
+    }
+
+    /* Ajusta el margen superior para evitar que el contenido se solape con el header */
+    main {
+        margin-top: 350px; /* Ajusta para evitar que el contenido se solape */
+    }
+}
+
+/* Estilos para pantallas con una altura máxima de 700px */
+@media screen and (max-height: 700px) {
+    .cabecera {
+        height: auto; /* Ajusta la altura para pantallas más pequeñas */
+    }
+
+    main {
+        margin-top: 150px; /* Ajusta para evitar que el contenido se solape */
+    }
+}
+
+/* Combinación de media queries: cuando el ancho es menor a 805px y la altura menor a 700px */
+@media screen and (max-width: 805px) and (max-height: 700px) {
+    
+    main {
+        margin-top: 350px; /* Ajuste de margen superior */
+    }
+
+    /* Ajuste del tamaño del título */
+    h1 {
+        font-size: 1.5rem; /* Ajusta el tamaño del texto para pantallas más pequeñas */
+    }
+
+    .cabecera .logo img {
+        max-width: 80%; /* Reduce el tamaño del logo en pantallas más pequeñas*/ 
+    }
+    
 }
 
 /* Footer */
