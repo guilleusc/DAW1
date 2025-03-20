@@ -6,10 +6,11 @@
     <meta charset="UTF-8">
     <meta name="description" content="Noticias de la liga."/>
     <meta name="author" content="Guillermo Arcos, Adrián Eitor" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../assets/css/bootstrap/bootstrap.min.css">
     <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
     <link rel="stylesheet" href="../assets/css/general.css">
-    <link rel="stylesheet" href="../assets/css/noticias.css"> 
-
+    <link rel="stylesheet" href="../assets/css/noticias.css">    
     <!-- Fuente Exo 2-->
     <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
 </head>
@@ -23,14 +24,14 @@
         </figure>
     
         <!-- Barra de navegación -->
-        <nav>
+        <nav class="mi-nav">
                 
-            <ul>
-                <li> <a href="noticias.html">Noticias</a> </li>
-                <li> <a href="calendario.html">Calendario</a> </li>
-                <li> <a href="equipos.html">Equipos</a> </li>
-                <li> <a href="clasificacion.html">Clasificación</a> </li>
-                <li> <a href="sobrenosotros.html">Sobre nosotros</a> </li>
+            <ul class="mi-ul">
+                <li class="mi-li"> <a href="noticias.html">Noticias</a> </li>
+                <li class="mi-li"> <a href="calendario.html">Calendario</a> </li>
+                <li class="mi-li"> <a href="equipos.html">Equipos</a> </li>
+                <li class="mi-li"> <a href="clasificacion.html">Clasificación</a> </li>
+                <li class="mi-li"> <a href="sobrenosotros.html">Sobre nosotros</a> </li>
             </ul>
     
         </nav>
@@ -38,64 +39,123 @@
     </header>
 
    <!-- Contenido principal -->
-   <main>
-        <h1>Noticias</h1>
-        <!-- Sección de Noticias principales -->
-        <section>
+   <main class="container-fluid">
+        <h1 class="mb-4 offset-lg-1">Noticias</h1>
+        <div class="row gx-lg-0">
+            <!-- Aside: Destacado -->
+            <aside class="col-lg-2 offset-lg-1 col-12 order-1 order-lg-2">
+                <div class="p-0 rounded shadow-sm text-center">
+                    <div class="div-titulo p-0 bg-black rounded shadow-sm">
+                        <h5 class="text-white fw-bold text-uppercase">Lo más destacado</h5>
+                    </div>
+                    <ol class="lista list-unstyled p-3">
+                        <li class="mb-2"><a href="#" class="text-black text-decoration-none d-block">1. Intercambio de estrellas: Joao Félix y Antoine Griezmann podrían cambiar de equipo</a></li>
+                        <li class="mb-2"><a href="#" class="text-black text-decoration-none d-block">2. Real Madrid rompe el mercado con la llegada de Alphonso Davies</a></li>
+                        <li class="mb-2"><a href="#" class="text-black text-decoration-none d-block">3. El Atlético de Madrid prepara una oferta millonaria por Paulo Dybala</a></li>
+                        <li class="mb-2"><a href="#" class="text-black text-decoration-none d-block">4. El Sevilla ficha a Mason Greenwood para pelear por Europa</a></li>
+                        <li class="mb-2"><a href="#" class="text-black text-decoration-none d-block">5. El Celta se desprende de Douvikas</a></li>
+                        <!-- Puedes continuar con el resto -->
+                    </ol>
+                </div>
+            </aside>
+            <!-- Contenedor de noticias -->
+            <div class="col-lg-7 offset-lg-1 col-12 order-2 order-lg-1 contenedor-noticias">
+            
+                <!-- Noticia 1 -->
+                <a href="noticia_ancelotti.html" class="text-decoration-none text-black">
+                    <article class="articulo d-flex flex-column flex-md-row p-3 shadow-sm rounded">
+                        <div class="flex-grow-1">
+                            <h6 class="text-danger fw-bold">REAL MADRID</h6>
+                            <h3 class="fw-bold">Ancelotti confía en la cantera para afrontar el tramo final de la temporada</h3>
+                            <p class="small text-muted d-flex align-items-center gap-3 mt-2">
+                                <span>✍️ GUILLERMO ARCOS</span> 
+                                <span>⏰ HACE 2 HORAS</span>
+                            </p>
+                        </div>
+                        <div class="ms-md-3 mt-3 mt-md-0">
+                            <img src="../assets/img/bernabeu.jpg" alt="Bernabeu" class="img-fluid rounded" style="max-width: 200px;">
+                        </div>
+                    </article>
+                </a>
 
-            <!-- Cada noticia se coloca dentro de un <article> -->
-            <article>
+                <!-- Noticia 2 -->
+                <a href="#" class="text-decoration-none text-black">
+                    <article class="articulo d-flex flex-column flex-md-row p-3 shadow-sm rounded mt-4">
+                        <div class="flex-grow-1">
+                            <h6 class="text-danger fw-bold">ATLÉTICO DE MADRID</h6>
+                            <h3 class="fw-bold">El Atleti cierra la renovación de Griezmann hasta 2027</h3>
+                            <p class="small text-muted d-flex align-items-center gap-3 mt-2">
+                                <span>✍️ ADRIÁN EITOR</span> 
+                                <span>⏰ HACE 3 HORAS</span>
+                            </p>
+                        </div>
+                        <div class="ms-md-3 mt-3 mt-md-0">
+                            <img src="../assets/img/atleti.jpg" alt="Wanda" class="img-fluid rounded" style="max-width: 200px;">
+                        </div>
+                    </article>
+                </a>
 
-                <h4>Real Madrid</h4>
+                <!-- Noticia 3 -->
+                <a href="#" class="text-decoration-none text-black">
+                    <article class="articulo d-flex flex-column flex-md-row p-3 shadow-sm rounded mt-4">
+                        <div class="flex-grow-1">
+                            <h6 class="text-danger fw-bold">BARCELONA</h6>
+                            <h3 class="fw-bold">El Barça busca refuerzos en el mercado invernal</h3>
+                            <p class="small text-muted d-flex align-items-center gap-3 mt-2">
+                                <span>✍️ SERGIO COSTA / SARA DIEGO</span> 
+                                <span>⏰ HACE 6 HORAS</span>
+                            </p>
+                        </div>
+                        <div class="ms-md-3 mt-3 mt-md-0">
+                            <img src="../assets/img/campnou.jpg" alt="Camp Nou" class="img-fluid rounded" style="max-width: 200px;">
+                        </div>
+                    </article>
+                </a>
 
-                <h2>Real Madrid gana el clásico contra el FC Barcelona</h2>
+                <!-- Noticia 4 -->
+                <a href="#" class="text-decoration-none text-black">
+                    <article class="articulo d-flex flex-column flex-md-row p-3 shadow-sm rounded mt-4">
+                        <div class="flex-grow-1">
+                            <h6 class="text-danger fw-bold">REAL MADRID</h6>
+                            <h3 class="fw-bold">Joselu habla sobre su salida al fútbol qatarí y la relación entre Mbappé y Vinicius</h3>
+                            <p class="small text-muted d-flex align-items-center gap-3 mt-2">
+                                <span>✍️ REDACCIÓN DEPORTES</span>
+                                <span>⏰ HACE 3 HORAS</span>
+                            </p>
+                        </div>
+                        <div class="ms-md-3 mt-3 mt-md-0">
+                            <img src="../assets/img/bernabeu.jpg" alt="Joselu" class="img-fluid rounded" style="max-width: 200px;">
+                        </div>
+                    </article>
+                </a>
 
-                <p> Juan Pérez  Hace 3 horas </p>
+                <!-- Noticia 5 -->
+                <a href="#" class="text-decoration-none text-black">
+                    <article class="articulo d-flex flex-column flex-md-row p-3 shadow-sm rounded mt-4">
+                        <div class="flex-grow-1">
+                            <h6 class="text-danger fw-bold">FC BARCELONA</h6>
+                            <h3 class="fw-bold">Preocupación en el Barça por la gestión del contrato de Lamine Yamal</h3>
+                            <p class="small text-muted d-flex align-items-center gap-3 mt-2">
+                                <span>✍️ REDACCIÓN DEPORTES</span>
+                                <span>⏰ HACE 5 HORAS</span>
+                            </p>
+                        </div>
+                        <div class="ms-md-3 mt-3 mt-md-0">
+                            <img src="../assets/img/campnou.jpg" alt="Lamine Yamal" class="img-fluid rounded" style="max-width: 200px;">
+                        </div>
+                    </article>
+                </a>
+            </div>
 
-            </article>
-
-            <article>
-
-                <h4>FC Barcelona</h4>
-
-                <h2>FC Barcelona presenta su nuevo fichaje: Joao Félix</h2>
-        
-                <p> Laura González   Hace 1 día</p>
-
-            </article>
-
-            <article>
-
-                <h4>Atlético de Madrid</h4>
-
-                <h2>Atlético de Madrid se prepara para la próxima jornada</h2>
-                
-                <p> Carlos López    Hace 2 días </p>
-
-            </article>
-
-        </section>
-
-        <!-- Sección de Noticias destacadas (solo títulos) -->
-        <aside>
-
-            <h2>Lo más destacado</h2>
-
-            <ol>
-                <li><a href="#">El Real Madrid sigue liderando la liga</a></li>
-                <li><a href="#">Sevilla FC logra una importante victoria</a></li>
-                <li><a href="#">Valencia CF anuncia nuevo entrenador</a></li>
-                <li><a href="#">Atlético de Madrid vence al Villarreal</a></li>
-                <li><a href="#">FC Barcelona clasifica para la Champions</a></li>
-            </ol>
-        </aside>
-
+        </div>
     </main>
 
     <footer>
         <p>&copy; 2025 desMARCAdos. Todos los derechos reservados.</p>
         <p><a href="https://unsplash.com/" target="_blank">Imágenes de Unsplash</a></p>
     </footer>
+    <!-- Llamar al javaScript de Booststrap -->
+    <script src="../assets/js/bootstrap/bootstrap.bundle.min.js"></script>
 
 </body>
 

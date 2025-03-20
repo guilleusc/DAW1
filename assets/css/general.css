@@ -63,6 +63,8 @@ main {
 
 /* Estilos para el logo dentro de la cabecera */
 .cabecera .logo {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
     display: flex;
     background-color: white;
     justify-content: center;
@@ -80,9 +82,8 @@ main {
 }
 
 /* Estilos para la barra de navegación */
-.cabecera nav {
+.mi-nav, .cabecera nav {
     width: 100%;
-    background-color: red;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -90,7 +91,7 @@ main {
 }
 
 /* Lista de navegación */
-.cabecera ul {
+.mi-ul, .cabecera ul {
     display: flex;
     justify-content: space-between; /* Espacia los elementos horizontalmente */
     list-style-type: none; /* Elimina los estilos de lista */
@@ -100,11 +101,12 @@ main {
 }
 
 /* Elementos individuales del menú */
-.cabecera li {
+.mi-li, .cabecera li {
     /* Cada elemento ocupa aproximadamente 1/6 del ancho total */
     flex: 0 0 16.66%; 
     text-align: center;
-    font-size: 18px;
+    font-size: 23px;
+    text-decoration: solid;
 }
 
 /* Enlaces del menú */
@@ -141,19 +143,19 @@ main {
         padding-bottom: 10px;
     }
 
-    .cabecera nav {
+    .mi-nav, .cabecera nav {
         width: 100%;
         background-color: red;
     }
 
     /* Cambia el menú a una lista vertical */
-    .cabecera ul {
+    .mi-ul, .cabecera ul {
         flex-direction: column;
         align-items: center;
         width: 100%;
     }
 
-    .cabecera li {
+    .mi-li, .cabecera li {
         width: 100%;
         text-align: center;
     }
@@ -166,7 +168,7 @@ main {
 
     /* Ajusta el margen superior para evitar que el contenido se solape con el header */
     main {
-        margin-top: 350px; /* Ajusta para evitar que el contenido se solape */
+        margin-top: 395px; /* Ajusta para evitar que el contenido se solape */
     }
 }
 
