@@ -46,7 +46,8 @@ table {
 
 td {
     border: 1px solid #ccc;
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     text-align: center;
     font-family: 'Exo 2';
 }
