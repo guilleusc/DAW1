@@ -42,10 +42,6 @@ h2 {
     font-size: 1.35vw;
 } 
 
-h1 {
-    font-size: 48px;
-} 
-
 table {
     font-size: 0.9vw;
     font-family: 'Exo 2';
@@ -81,7 +77,7 @@ table tbody tr:nth-child(odd) {
     }
 
     #equipos ul {
-        font-size: 4vw;
+        font-size: 23px;
         column-count: 1; /* Cambiar columnas de 2 a 1 */
     }
 

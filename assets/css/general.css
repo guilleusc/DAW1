@@ -38,11 +38,10 @@ body {
 
 /* Estilos para el título principal */
 h1 {
-    font-size: 48px;
+    font-size: 48px !important;
     text-align: start; /* Alineación del texto a la izquierda */
     text-decoration: underline black; /* Subraya el título en negro */
     margin-bottom: 20px;
-    margin-left: 20px;
 }
 
 /* Estilos para el contenido principal */
@@ -56,6 +55,7 @@ main {
     align-items: center; /* Alinea verticalmente los elementos */
     justify-content: center; /* Centra los elementos horizontalmente */
     background-color: red;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* sombra oscura */
     position: fixed; /* Hace que la cabecera siempre esté visible en la parte superior */
     top: 0;
     width: 100%;
@@ -126,10 +126,11 @@ main {
 
 /* ================== ESTILOS RESPONSIVOS ================== */
 
-/* Estilos para pantallas pequeñas (máx. 805px de ancho) */
+/* Estilos para pantallas pequeñas (máx. 992px de ancho) */
 /* Estilos Responsivos para el ancho */
-@media screen and (max-width: 805px) {
+@media screen and (max-width: 992px) {
     .cabecera {
+        position: static;
         flex-direction: column; /* Apila los elementos verticalmente */
         align-items: center;
         justify-content: center;
@@ -163,12 +164,12 @@ main {
     .cabecera li a {
         display: block;
         width: 100%;
-        padding: 10px;
+        padding: 10px !important ;
     }
 
     /* Ajusta el margen superior para evitar que el contenido se solape con el header */
     main {
-        margin-top: 395px; /* Ajusta para evitar que el contenido se solape */
+        margin-top: 20px;
     }
 }
 
@@ -177,22 +178,19 @@ main {
     .cabecera {
         height: auto; /* Ajusta la altura para pantallas más pequeñas */
     }
-
-    main {
-        margin-top: 150px; /* Ajusta para evitar que el contenido se solape */
-    }
 }
 
-/* Combinación de media queries: cuando el ancho es menor a 805px y la altura menor a 700px */
-@media screen and (max-width: 805px) and (max-height: 700px) {
+/* Combinación de media queries: cuando el ancho es menor a 992px y la altura menor a 700px */
+@media screen and (max-width: 992px) and (max-height: 700px) {
     
+    /* Ajusta el margen superior para evitar que el contenido se solape con el header */
     main {
-        margin-top: 350px; /* Ajuste de margen superior */
+        margin-top: 20px;
     }
 
     /* Ajuste del tamaño del título */
     h1 {
-        font-size: 1.5rem; /* Ajusta el tamaño del texto para pantallas más pequeñas */
+        font-size: 3rem !important; /* Ajusta el tamaño del texto para pantallas más pequeñas */
     }
 
     .cabecera .logo img {

@@ -27,8 +27,16 @@ main {
     overflow-y: auto;
 }
 
-@media screen and (max-width: 805px) {
+.mi-li {
+    line-height: normal !important;
+}
+
+h1 {
+    font-weight: 700;
+}
+@media screen and (max-width: 992px) {
     main {
-        margin-top: 420px;
+        padding-left: 8.3% !important;
+        padding-right: 8.3% !important;
     }
 }
