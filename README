@@ -8,4 +8,8 @@ TODO:
 	.- Página de Sobre nosotros (desde figma). (figma -> html -> css)
 	.- Página de Noticia (en concreto) (desde figma).
 	.- Página de Equipo (en conreto) (desde html)
-	.- Arreglar en calendario.html porqué non se cuadran ben ao poñelos en vertical
+	.- Arreglar en calendario.html porqué non se cuadran ben ao poñelos en vertical 
+		(tamén hai problemas cos deplegables porque ao aumentar unha fila na tabla
+		dunha jornada e noutra no, descompénsanse as alturas e co float queda mal): 
+		como xa temos o de flexible grid no de equipos, o seu era este facelo co flex
+		e acabamos antes.
