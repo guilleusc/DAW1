@@ -59,6 +59,7 @@ main {
     position: fixed; /* Hace que la cabecera siempre esté visible en la parte superior */
     top: 0;
     width: 100%;
+    z-index: 2;
 }
 
 /* Estilos para el logo dentro de la cabecera */

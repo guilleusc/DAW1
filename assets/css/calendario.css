@@ -20,13 +20,19 @@ td {
     position: relative;
 }
 /* Alternar posición de las jornadas */
-.jornada:nth-child(odd) {
-    float: right;
-}
-
 .jornada:nth-child(even) {
     float: left;
+    clear: left;/* Soluciona que al activar un desplegable en una
+                    jornada, desajustando las alturas entre tablas
+                    de jornadas paralelas, no se descuadren las tablas
+                    al intentar rellenar los huecos como consecuencia 
+                    del float */
 } 
+
+.jornada:nth-child(odd) {
+    float: right;
+    clear: right; 
+}
 
 /* Estilos del título */
 h3 {
