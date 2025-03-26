@@ -44,9 +44,46 @@ h1 {
     margin-bottom: 20px;
 }
 
-/* Estilos para el contenido principal */
-main {
-    margin-top: 150px; /* Ajusta según la altura de la navbar */
+/* Estilos para el contenido principal (main), según diseño de Figma. */
+main 
+{
+    /* 
+    Define un margen superior basado en el tamaño de la ventana del navegador.
+    Se calcula como 1/16 de la altura total (100vh), lo que ayuda a que el contenido 
+    no esté pegado a la cabecera, dejando un espacio visual adecuado arriba.
+    */
+    margin-top: calc(100vh / 16); /* 1/16 de la altura de la ventana */
+
+ /* 
+    Establece la altura mínima del área principal para que ocupe el espacio restante de la pantalla.
+    - Se toma la altura total de la ventana (100vh).
+    - Se resta la altura de la cabecera (125px).
+    - Se resta el margen superior ya definido (1/16 de la altura de la ventana).
+    
+    Esto garantiza que el contenido se extienda hasta la parte inferior sin que el footer 
+    lo cubra o quede espacio en blanco innecesario.
+    */
+    min-height: calc(100vh - 125px - calc(100vh / 16)); 
+
+    /* 
+    Asegura que el ancho y alto del elemento incluyan el padding y el borde 
+    en sus cálculos de tamaño, evitando desbordamientos inesperados.
+    */
+    box-sizing: border-box;
+
+    /* 
+    Ocupa el 100% del ancho disponible, asegurando que el contenido principal
+    se extienda por toda la página.
+    */
+    width: 100%;
+
+    /* 
+    Añade un espacio lateral proporcional (8.3% del ancho de la ventana) en ambos lados.
+    Esto equivale aproximadamente a 1/12 del ancho total de la página, lo que permite 
+    que el contenido quede centrado y alineado con un diseño basado en 12 columnas.
+    */
+    padding-left: 8.3vw;
+    padding-right: 8.3vw;
 }
 
 /* Barra de navegación */
@@ -56,7 +93,7 @@ main {
     justify-content: center; /* Centra los elementos horizontalmente */
     background-color: red;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* sombra oscura */
-    position: fixed; /* Hace que la cabecera siempre esté visible en la parte superior */
+    position: sticky; /* Hace que la cabecera siempre esté visible en la parte superior */
     top: 0;
     width: 100%;
     z-index: 2;

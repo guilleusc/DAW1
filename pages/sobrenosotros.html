@@ -41,47 +41,86 @@
     <!-- Contenido principal -->
     <main>
         <h1>Sobre Nosotros</h1>
-        <section>
-            <h2>Quiénes somos</h2>
-            <p>
-                Somos un grupo de apasionados por el fútbol que hemos creado desMARCAdos para mantener a los aficionados
-                informados sobre todo lo relacionado con la liga española. Nuestro objetivo es ofrecer una plataforma
-                donde los seguidores de los equipos puedan encontrar noticias, estadísticas, calendarios y clasificaciones
-                de manera fácil y accesible.
-            </p>
 
-            <p>
-                Con un enfoque en la precisión y la actualización constante, nuestro equipo editorial trabaja incansablemente
-                para brindarte contenido de calidad sobre el fútbol, los jugadores y los equipos.
-            </p>
-        </section>
+        <div class="box">
+            
+            <!-- Form -->
+            <section class="contact form">
+                <h3> Cartas al director, envía tu mensaje</h3>
+                <form>
 
-        <section>
-            <h2>Ubicación</h2>
-            <p>
-                Nuestra sede se encuentra en el corazón de Madrid, donde operamos con un equipo de trabajo comprometido
-                a ofrecerte la mejor experiencia de usuario en el ámbito futbolístico.
-            </p>
-            <div>
-                <!-- Aquí iría un mapa interactivo -->
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2517.4438128201274!2d-3.703790784192478!3d40.41677597933161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422a1a111fc1d1%3A0xe4080c350d08fe2!2sMadrid%2C%20España!5e0!3m2!1ses!2ses!4v1676331245832!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-        </section>
+                    <div class="formBox"> 
 
-        <section>
-            <h2>Contacto</h2>
-            <p>
-                Si deseas ponerte en contacto con nuestro equipo editorial, puedes enviarnos tus cartas al director a la siguiente dirección:
-            </p>
-            <address>
-                Calle del Fútbol, 123<br>
-                28013 Madrid, España<br>
-                <a href="mailto:contacto@desmarcados.com">contacto@desmarcados.com</a>
-            </address>
-            <p>
-                Nos encantaría saber tu opinión, recibir sugerencias o responder a cualquier duda que tengas sobre nuestro sitio web.
-            </p>
-        </section>
+                        <div class="row50">
+                            <div class="inputBox">
+                                <span> Nombre </span>
+                                <input type="text" placeholder="Manolo">
+                            </div>
+
+                            <div class="inputBox">
+                                <span>Apellidos</span>
+                                <input type="text" placeholder="Campaña">
+                            </div>
+                        </div>
+
+
+                        <div class="row50">
+                            <div class="inputBox">
+                                <span>Email</span>
+                                <input type="text" placeholder="manolocampaña@email.com">
+                            </div>
+
+                            <div class="inputBox">
+                                <span>Teléfono móvil</span>
+                                <input type="text" placeholder="+34 653 95 76 90">
+                            </div>
+                        </div>
+
+                        <div class="row100">
+                            <div class="inputBox">
+                                <span>Texto</span>
+                                <textarea placeholder="Escribe tu  mensaje.">  </textarea>
+                            </div>
+                        </div>
+
+                        <div class="row100">
+                            <div class="inputBox">
+                                <input type="submit" value="Enviar"> 
+                            </div>
+                        </div>
+
+                    </div>
+
+                </form>
+            </section>
+
+            <!-- Caja de información-->
+            <section class="contact info"> 
+                
+                <h3>Información de contacto</h3>
+                <div class="infoBox">
+                    <div>
+                        <p><strong>Dirección:</strong> <br> Rúa Fernando III O Santo, Santiago de Compostela <br>ESPAÑA</p>
+                    </div>
+
+                    <div>
+                        <p><strong>Email:</strong> <br> <a href="mailto:pander@email.com">pander@email.com</a></p>
+                    </div>
+
+                    <div>
+                        <p><strong>Teléfono:</strong> <br> <a href="tel:+34678221945">+34 678 22 19 45</a> <br> <a href="tel:+34678221945">+34 676 98 19 67</a></p>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- Mapa -->
+            <section class="contact map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2446.9877340928642!2d-3.690913989445996!3d40.45304275331095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228e23705d39f%3A0xa8fff6d26e2b1988!2sEstadio%20Santiago%20Bernab%C3%A9u!5e1!3m2!1ses!2ses!4v1743015516146!5m2!1ses!2ses" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+            
+        </div>
+
 
     </main>
 
@@ -89,7 +128,6 @@
         <p>&copy; 2025 desMARCAdos. Todos los derechos reservados.</p>
         <p><a href="https://unsplash.com/" target="_blank">Imágenes de Unsplash</a></p>
     </footer>
-
 </body>
 
 </html>

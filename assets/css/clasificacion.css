@@ -1,0 +1,16 @@
+main 
+{
+     /* 
+    Página de clasificación más centrada.
+
+    Se establecen márgenes laterales para que el contenido no ocupe todo el ancho de la pantalla,
+    sino que quede centrado y con espacio a los lados.
+
+    - Se usa 16.6vw (16.6% del ancho de la ventana) en cada lado.
+    - Esto equivale aproximadamente a 2/12 del ancho total, siguiendo un diseño basado en 12 columnas.
+    
+    De esta forma, el contenido se mantiene alineado de manera proporcional en pantallas grandes.
+    */
+    padding-left: 16.6vw;
+    padding-right: 16.6vw;
+}
