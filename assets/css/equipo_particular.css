@@ -1,0 +1,191 @@
+/* Contenedor principal que agrupa la info del equipo y el container */
+.equipo-container 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem; /* Espaciado entre cajas */
+    
+    width: 100%;
+}
+
+/* Caja izquierda con el escudo y nombre del equipo */
+.equipo-info 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.equipo-info img 
+{
+    width: 120px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.equipo-info h2 
+{
+    font-size: 2rem;
+    color: #202238;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: bold; /* Hacer que el texto sea más destacado */
+}
+
+.container
+{
+    background-color: black;
+    width: 95vmin;
+    min-width: 30em;
+    height: 30em;
+
+    font-size: 16px;
+
+    display: grid;
+    grid-template-columns: 2fr 9fr;
+
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.tabs
+{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+h3
+{
+    height: 33.33%;
+    display: grid;
+    place-items: center;
+    font-size: 1.2em;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.tab-content
+{
+    background-color: white;
+    padding: 1em 1.5em;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); /* Difuminado sutil */
+
+    display: flex;
+    flex-direction: column; /* Para organizar elementos en columna */
+    justify-content: center; /* Centra el contenido verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    height: 100%; /* Asegura que use todo el espacio disponible */
+}
+
+.tab-content h4
+{
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+    font-weight: 600;
+
+}
+
+.tab-content p
+{
+    text-align:justify;
+    line-height: 1.9;
+    letter-spacing: 0.4px;   
+    color: #202238;
+
+    font-size: 18px;
+    margin: 8px 0;
+    font-family: 'Exo 2';
+}
+
+.tab-content p span 
+{
+    font-weight: bold;
+}
+
+
+.tab-content div 
+{
+    text-align: justify;
+    width: 100%; /* Para evitar que se estire demasiado */
+    display: none;
+}
+
+.tab-content .active
+{
+    display: block;
+}
+
+.tabs .active 
+{
+    background-color: black; /* Mantiene el fondo negro */
+    position: relative;
+}
+
+.tabs .active::after 
+{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 10%;
+    height: 80%;
+    width: 4px; /* Ancho de la línea */
+    background-color: white; /* Color de la línea */
+}
+
+/* Estilos de las tablas */
+table
+ {
+    width: 90%; /* Controla el tamaño de la tabla */
+    max-width: 600px; /* Para que no se expanda demasiado */
+    margin: 0 auto; /* Centrar horizontalmente */
+
+    border-collapse: collapse;
+    border: 2px solid #ccc; /* Asegurar que todos los bordes se vean */
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    font-family: 'Exo 2';
+}
+
+td 
+{
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+th
+{
+    text-align: center;
+}
+
+/* Alternar colores */
+table tr:nth-child(even)
+{
+    background-color: #f8f8f8;
+}
+
+/* Diseño responsive */
+@media screen and (max-width: 768px) 
+{
+    .equipo-container 
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .equipo-info, .container 
+    {
+        width: 90%;
+    }
+}
