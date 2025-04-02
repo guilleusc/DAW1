@@ -132,6 +132,7 @@ main
 .mi-ul, .cabecera ul {
     display: flex;
     justify-content: space-between; /* Espacia los elementos horizontalmente */
+    align-items: center;
     list-style-type: none; /* Elimina los estilos de lista */
     margin: 0;
     padding: 0;

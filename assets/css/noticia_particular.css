@@ -1,29 +1,32 @@
 body
 {
-    font-family: sans-serif;
     min-height: 100vh;
     max-width: 100vw;
     line-height: 1.4;
     padding: 20 px 40px;
 }
 
-main
+/*main
 {
-    /*max-width: 1200px;*/
+    max-width: 1200px;
 
-}
+}*/
 
 .heading-1
 {
     font-size: 40px;
     text-transform: uppercase;
+    text-decoration: none;
 }
 
 .heading-2
 {
+    font-family: 'Exo 2';
     font-size: 40px;
+    text-align: justify;
     line-height: 1.1;
     margin-bottom: 20px;
+    font-size: 'Exo 2';
 
 }
 
@@ -38,6 +41,7 @@ main
 .sub-heading
 {
     font-size: 20px;
+    font-family: 'Exo 2';
     display: flex;
     align-items: center;
     margin-bottom: 30px;
@@ -96,8 +100,9 @@ main
 
 /* ARTICLE */
 
-article > p
+/*article > p
 {
+    font-family: 'Exo 2';
     font-size: 20px;
     margin-bottom: 20px;
 
@@ -105,23 +110,38 @@ article > p
 
     column-gap: 40px;
     hyphens: auto;
-}
+}*/
 
-article p:first-child::first-line
+/* ARTICLE CON 3 COLUMNAS - Versión mejorada */
+article > p 
 {
-    font-weight: 700;
-    font-size: 25px;
+    font-family: 'Exo 2';
+    font-size: 20px;
+    margin-bottom: 20px;
+    
+    /* Propiedades para columnas */
+    columns: 3; /* Número de columnas */
+    column-width: 25ch; /* Ancho mínimo de cada columna */
+    column-gap: 40px; /* Espacio entre columnas */
+    column-fill: balance; /* Distribuye el contenido equitativamente */
+    hyphens: auto; /* División automática de palabras */
+    
+    /* Mejoras adicionales */
+    line-height: 1.5; /* Espaciado entre líneas */
+    text-align: justify; /* Texto justificado */
+    padding: 10px 0; /* Espaciado vertical */
 }
 
 /* blockquote */
 blockquote
 {
+    font-family: 'Exo 2';
     font-size: 20px;
     padding: 10px 30px;
     margin-bottom: 40px;
 }
 
-blockquote::before
+/*blockquote::before
 {
     content: open-quote;
     position: absolute;
@@ -130,21 +150,96 @@ blockquote::before
     opacity: .3;
     color: #666;
     font-size: 150px;
-}
+}*/
+
+blockquote 
+{
+    padding: 20px;
+    margin: 20px 0;
+    background: #f8f8f8;
+    border-left: 4px solid #c00;
+    font-style: italic;
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #333;
+  }
+
+  blockquote p 
+  {
+    margin: 0;
+    padding: 0;
+  }
 
 .cards
 {
-    columns: 25ch 3;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    /*columns: 25ch 3;*/
     gap: 40px;
     margin-bottom: 40px;
 }
 
 .card
 {
+    background-color: red;
+    color: #fff;
+    border-radius: 8px;
+    padding: 25px;
+    flex: 1 1 300px;
+    max-width: 350px;
+    cursor: pointer;
+
+    font-family: 'Exo 2';
     font-size: 20px;
     border: 1px solid;
     padding: 10px 20px;
     break-inside: avoid;
+
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover 
+{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.poll-container 
+{
+    margin-top: 20px;
+    display: none;
+}
+
+.poll-option 
+{
+    margin: 15px 0;
+    cursor: pointer;
+    position: relative;
+    padding-left: 20px;
+}
+
+.poll-option:hover 
+{
+    color: #ffcccc;
+}
+
+.poll-option::before 
+{
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #fff;
+}
+
+.first-letter{
+    color: red;
+    font-size: 48px;
+    float: left;
+    line-height: 1;
+    margin-right: 8px;
+    font-weight: bold;
 }
 
 @media (max-width: 950px)
