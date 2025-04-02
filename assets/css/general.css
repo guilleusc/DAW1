@@ -23,6 +23,14 @@
     font-style: normal;
 }
 
+/* Importación de una fuente personalizada */
+@font-face {
+    font-family: 'Titular';
+    src: url('../fonts/Orbitron-Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* ESTILOS BASE */
 body {
     font-family: 'Orbitron'; /* Usa la fuente personalizada */

@@ -1,5 +1,5 @@
 /* Contenedor principal que agrupa la info del equipo y el container */
-.equipo-container 
+.contenedor-equipo 
 {
     display: flex;
     justify-content: space-between;
@@ -40,7 +40,17 @@
     font-weight: bold; /* Hacer que el texto sea más destacado */
 }
 
-.container
+.liga 
+{
+    font-size: 1.2rem;  /* Tamaño de letra */
+    color: #555;  /* Color gris oscuro para mejor legibilidad */
+    font-weight: 600;  /* Negrita ligera */
+    margin-top: -5px;  /* Ajuste del margen */
+    text-align: center;  /* Centrar el texto */
+    font-family: 'Exo 2', sans-serif; /* Mantener la coherencia con el diseño */
+}
+
+.contenedor
 {
     background-color: black;
     width: 95vmin;
