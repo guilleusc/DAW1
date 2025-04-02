@@ -44,7 +44,7 @@ function anhadirListeners(td) {
         rect.setAttribute("id", "activo");
         flecha.textContent = "▴"; // Flecha hacia arriba
         // Insertamos una celda que ocupa las 3 columnas de la tabla
-        rect.innerHTML = "<td colspan=\"3\">Aquí irían los goles</td>";
+        rect.innerHTML = "<td colspan=\"3\">Aquí irían los goles<br>sdghsdfg</td>";
       }
     });
 

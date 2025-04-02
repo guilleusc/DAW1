@@ -63,7 +63,7 @@ td:nth-child(3) {
 }
 
 /* Añadir punto de ruptura a los 992px */
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
     
 
     /* Desactivar floats */

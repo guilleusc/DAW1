@@ -6,22 +6,27 @@
 }
 
 .cabecera {  grid-area: cabecera; }
-.subcabecera {  grid-area: subcabecera; }
-.contenedorImagenes {  grid-area: contenedor; }
+.subcabecera { grid-area: subcabecera}
+.im1 {  grid-area: im1; }
+.im2 {  grid-area: im2; }
+.im3 {  grid-area: im3; }
+.im4 {  grid-area: im4; }
+footer { grid-area: footer } 
 
 body {
     display: grid;
     font-family: 'Orbitron';
-    text-align: center;
     background-color: rgb(F,F,F);
     padding: 0px;
     margin: 0px;
     grid-template-areas: 
-        'cabecera'
-        'subcabecera'
-        'contenedor';
-    grid-template-rows: 23vh 10vh 66vh;
+        'cabecera cabecera'
+        'subcabecera subcabecera'
+        'im1 im2'
+        'im3 im4'
+        'footer footer';
     grid-gap: 0px;
+    grid-template-rows: 22vh 11vh 33vh 33vh 11vh;
 }
 .cabecera {
     display: flex;
@@ -47,9 +52,9 @@ body {
     background-color: rgb(255, 0, 0);
     padding-left: 10rem;
     padding-right: 8rem;
-    padding-top: 3vh;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .text1{
@@ -77,40 +82,20 @@ section p {
 }
 
 
-/* Contenedor de imágenes */
-.im1 {  grid-area: im1; }
-.im2 {  grid-area: im2; }
-.im3 {  grid-area: im3; }
-.im4 {  grid-area: im4; }
-
-.contenedorImagenes {
-    display: grid;
-    grid-template-areas: 
-        'im1 im2'
-        'im3 im4';
-    grid-template-rows: 33vh 33vh;
-    grid-gap: 0px;
-    margin: 0px;
-    padding: 0;
-}
-
-.contenedorImagenes figure{
+.im1, .im2, .im3, .im4{
     padding: 0px;
     margin: 0px;
-    align-items: center;
-    justify-content: center;
     position: relative;
     transition: filter 0.4s;
 }
 
-.contenedorImagenes figure:hover {
+.im1:hover, .im2:hover, .im3:hover, .im4:hover {
     filter: brightness(0.9); /* Oscurece la imagen */
 }
-.contenedorImagenes figure img{
-    padding: 0px;
-    margin: 0px;
-    width: 100%;
-    height: 100%;
+.im1 img, .im2 img, .im3 img, .im4 img{
+    display: block;
+    width: 100%;  /* Hace que la imagen se ajuste al ancho del figure */
+    height: 100%; /* Mantiene la proporción original */
 }
 
 .apartado {
@@ -125,24 +110,23 @@ section p {
 
 /* Punto de ruptura a 1019px */
 @media screen and (max-width: 1019px) {
-    .contenedorImagenes {
+    body {
         grid-template-areas: 
+            'cabecera'
+            'subcabecera'
             'im1'
             'im2'
             'im3'
-            'im4';
-        grid-template-rows: auto;
+            'im4'
+            'footer';
+        grid-template-rows: 22vh 11vh;
     }
     .subcabecera {
+        font-size: 14px;
         flex-direction: column;
         padding: 10px;
     }
-    body {
-        grid-template-rows: 22vh 20vh;
-    }
-    .subcabecera {
-        text-align: center;
-    }
+    
     .apartado {
         font-size: 5vw;
     }
@@ -156,9 +140,11 @@ section p {
 
 /* Footer */
 footer {
-    float: bottom;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
     margin-top: 0px;
     background: #222;
     color: white;
-    padding: 15px;
+    text-align: center;
 }
