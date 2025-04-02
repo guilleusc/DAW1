@@ -8,6 +8,12 @@ TODO:
 	.- Página de Sobre nosotros (desde figma). (figma -> html -> css)
 	.- Página de Noticia (en concreto) (desde figma).
 	.- Página de Equipo (en conreto) (desde html)
-	.- Arreglar en calendario.html porqué non se cuadran ben ao poñelos en vertical 
+	.- Arreglar en calendario.html porqué non se cuadran ben ao poñelos en vertical.
 	.- Igual habería que poñer naa tablas do calendario a etiqueta <caption> para os títulos
 		das jornadas.
+	.- Cambiar no index e poñerlle no grid 	'header header'
+											'im1 im2'
+											'im3 im4'
+											e xa me quitaría de definir 33vh nos altos de cada fila
+	.- Efectos visuales: pasar por encima de cada equipo e que salga marcado na tablas, apartados en cada equipo (JavaScript),
+						establecer o scroll dependendo da fecha (jQuery), poñer unha barra horizontal que determine a profundidad do scroll

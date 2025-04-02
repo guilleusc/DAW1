@@ -56,22 +56,29 @@ table tr:nth-child(4n + 3),
 table tr:nth-child(4n + 4) {
     background-color: #f8f8f8;
 }
+td:nth-child(1), 
+td:nth-child(3) {
+    min-width: 40%;
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+}
 
 /* Añadir punto de ruptura a los 992px */
 @media (max-width: 992px) {
     
+
     /* Desactivar floats */
     .jornada {
         float: none;
         width: 100%;
+        margin: 0px;
+        margin-bottom: 10px;
     }
 
     table {
         font-size: 3vw;    
     }
 
-    h2 {
+    h3 {
         font-size: 3vw;
     }
-
 }
