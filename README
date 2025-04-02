@@ -8,10 +8,7 @@ TODO:
 	.- Página de Noticia (en concreto) (falta figma).
 	.- Página de Equipo (en conreto) (FALTA FIGMA)
 	.- Pagina clasificacion
-	.- Cambiar no index e poñerlle no grid 	'header header'
-											'im1 im2'
-											'im3 im4'
-											e xa me quitaría de definir 33vh nos altos de cada fila
+
 	.- Efectos visuales: pasar por encima de cada equipo e que salga marcado na tablas?
 						 apartados en cada equipo->JES6
 						 establecer o scroll dependendo da fecha-> jQuery FACER + JQUERY
@@ -19,3 +16,4 @@ TODO:
 						 tarjetas noticia -> javaScript
 						 flechas -> javaScript
 						 menu-> javaScript FACER
+	.- Imágenes dimensionalas ben

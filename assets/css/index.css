@@ -12,7 +12,6 @@
 .im3 {  grid-area: im3; }
 .im4 {  grid-area: im4; }
 footer { grid-area: footer } 
-
 body {
     display: grid;
     font-family: 'Orbitron';
@@ -132,9 +131,9 @@ section p {
     }
 }
 
-@media screen and (max-height: 650px) {
+@media screen and (max-height: 800px) {
     body {
-        grid-template-rows: 150px 170px;
+        grid-template-rows: 150px 100px;
     }
 }
 
