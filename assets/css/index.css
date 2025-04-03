@@ -36,6 +36,7 @@ body {
 .cabecera figure {
     height: 100%; /* Ocupa toda la altura del contenedor */
     display: flex;
+    position: relative;
     align-items: center; /* Asegura que la imagen se mantenga centrada */
 }
 .cabecera figure img {
@@ -43,7 +44,20 @@ body {
     max-width: 100%; /* Evita que la imagen desborde */
     height: auto; /* Mantiene la proporción */
     width: auto; /* Permite que la imagen se reduzca proporcionalmente */
+    animation: ascender 2s ease-out forwards;
+    /* Posición inicial: 20px por DEBAJO de su lugar natural */
+    transform: translateY(15px);
+    /* Opcional: transparencia inicial para efecto*/
+    opacity: 0.8;
 }
+
+@keyframes ascender {
+    to {
+      transform: translateY(0); /* Vuelve a su posición original (Y=0) */
+      opacity: 1; /* Opacidad final */
+    }
+  }
+
 .subcabecera {
     font-size: 18px;
     box-sizing: border-box;
