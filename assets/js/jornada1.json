@@ -1,0 +1,224 @@
+{
+    "partidos": [
+      {
+        "fecha": "2024-08-15",
+        "equipo1": "Deportivo Alavés",
+        "equipo2": "Sevilla FC",
+        "resultado": "2 - 1",
+        "goles": [
+          {
+            "minuto": 12,
+            "equipo": "Deportivo Alavés",
+            "jugador": "Sergio Araujo"
+          },
+          {
+            "minuto": 30,
+            "equipo": "Sevilla FC",
+            "jugador": "Youssef En-Nesyri"
+          },
+          {
+            "minuto": 75,
+            "equipo": "Deportivo Alavés",
+            "jugador": "Álvaro García"
+          }
+        ]
+      },
+      {
+        "fecha": "2024-08-15",
+        "equipo1": "Real Valladolid",
+        "equipo2": "Real Sociedad",
+        "resultado": "0 - 0",
+        "goles": []
+      },
+      {
+        "fecha": "2024-08-15",
+        "equipo1": "Athletic Club",
+        "equipo2": "RCD Espanyol",
+        "resultado": "4 - 1",
+        "goles": [
+          {
+            "minuto": 10,
+            "equipo": "Athletic Club",
+            "jugador": "Iker Muniain"
+          },
+          {
+            "minuto": 22,
+            "equipo": "Athletic Club",
+            "jugador": "Iñaki Williams"
+          },
+          {
+            "minuto": 35,
+            "equipo": "RCD Espanyol",
+            "jugador": "Rafa Jordà"
+          },
+          {
+            "minuto": 50,
+            "equipo": "Athletic Club",
+            "jugador": "Iker Muniain"
+          },
+          {
+            "minuto": 75,
+            "equipo": "Athletic Club",
+            "jugador": "Ander Iturraspe"
+          }
+        ]
+      },
+      {
+        "fecha": "2024-08-15",
+        "equipo1": "CA Osasuna",
+        "equipo2": "Real Betis",
+        "resultado": "1 - 2",
+        "goles": [
+          {
+            "minuto": 15,
+            "equipo": "CA Osasuna",
+            "jugador": "Chimy Ávila"
+          },
+          {
+            "minuto": 40,
+            "equipo": "Real Betis",
+            "jugador": "Nabil Fekir"
+          },
+          {
+            "minuto": 65,
+            "equipo": "Real Betis",
+            "jugador": "Joaquín"
+          }
+        ]
+      },
+      {
+        "fecha": "2024-08-15",
+        "equipo1": "Girona FC",
+        "equipo2": "Real Sociedad",
+        "resultado": "0 - 1",
+        "goles": [
+          {
+            "minuto": 55,
+            "equipo": "Real Sociedad",
+            "jugador": "Mikel Oyarzabal"
+          }
+        ]
+      },
+      {
+        "fecha": "2024-08-15",
+        "equipo1": "RC Celta de Vigo",
+        "equipo2": "Real Madrid",
+        "resultado": "1 - 2",
+        "goles": [
+          {
+            "minuto": 20,
+            "equipo": "RC Celta de Vigo",
+            "jugador": "Iago Aspas"
+          },
+          {
+            "minuto": 40,
+            "equipo": "Real Madrid",
+            "jugador": "Karim Benzema"
+          },
+          {
+            "minuto": 80,
+            "equipo": "Real Madrid",
+            "jugador": "Vinícius Júnior"
+          }
+        ]
+      },
+      {
+        "fecha": "2024-08-15",
+        "equipo1": "RCD Mallorca",
+        "equipo2": "Rayo Vallecano",
+        "resultado": "1 - 0",
+        "goles": [
+          {
+            "minuto": 33,
+            "equipo": "RCD Mallorca",
+            "jugador": "Lamine Koné"
+          }
+        ]
+      },
+      {
+        "fecha": "2024-08-15",
+        "equipo1": "Atlético de Madrid",
+        "equipo2": "CD Leganés",
+        "resultado": "3 - 1",
+        "goles": [
+          {
+            "minuto": 10,
+            "equipo": "Atlético de Madrid",
+            "jugador": "Koke"
+          },
+          {
+            "minuto": 35,
+            "equipo": "Atlético de Madrid",
+            "jugador": "João Félix"
+          },
+          {
+            "minuto": 55,
+            "equipo": "CD Leganés",
+            "jugador": "Rubén Sánchez"
+          },
+          {
+            "minuto": 70,
+            "equipo": "Atlético de Madrid",
+            "jugador": "Saúl Ñíguez"
+          }
+        ]
+      },
+      {
+        "fecha": "2024-08-15",
+        "equipo1": "Villarreal CF",
+        "equipo2": "Getafe CF",
+        "resultado": "1 - 1",
+        "goles": [
+          {
+            "minuto": 25,
+            "equipo": "Villarreal CF",
+            "jugador": "Samuel Chukwueze"
+          },
+          {
+            "minuto": 50,
+            "equipo": "Getafe CF",
+            "jugador": "Ángel Rodríguez"
+          }
+        ]
+      },
+      {
+        "fecha": "2024-08-15",
+        "equipo1": "FC Barcelona",
+        "equipo2": "Sevilla FC",
+        "resultado": "5 - 1",
+        "goles": [
+          {
+            "minuto": 5,
+            "equipo": "FC Barcelona",
+            "jugador": "Lionel Messi"
+          },
+          {
+            "minuto": 15,
+            "equipo": "FC Barcelona",
+            "jugador": "Ousmane Dembélé"
+          },
+          {
+            "minuto": 30,
+            "equipo": "FC Barcelona",
+            "jugador": "Ansu Fati"
+          },
+          {
+            "minuto": 50,
+            "equipo": "FC Barcelona",
+            "jugador": "Ferran Torres"
+          },
+          {
+            "minuto": 75,
+            "equipo": "FC Barcelona",
+            "jugador": "Robert Lewandowski"
+          },
+          {
+            "minuto": 40,
+            "equipo": "Sevilla FC",
+            "jugador": "Youssef En-Nesyri"
+          }
+        ]
+      }
+    ]
+  }
+  

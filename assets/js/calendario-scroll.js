@@ -19,3 +19,4 @@ $(document).ready(function () {
         jornadaCercana.scrollIntoView({ behavior: "smooth", block: "center" });
     }
 });
+

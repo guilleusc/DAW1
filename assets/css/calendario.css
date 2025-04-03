@@ -8,9 +8,7 @@
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     margin: 10px;
 }
-td {
-    position: relative;
-}
+
 /* Alternar posición de las jornadas */
 .jornada:nth-child(even) {
     float: left;
@@ -44,11 +42,25 @@ table {
     overflow: hidden;
 }
 
+
 td {
+    position: relative;
     border: 1px solid #ccc;
     padding: 10px;
     text-align: center;
     font-family: 'Exo 2';
+}
+
+.goles {
+    font-size: small;
+}
+
+.goles p:first-child{
+    float: left;
+}
+
+.goles p:last-child{
+    float: right;
 }
 
 /* Alternar colores cada DOS filas */
