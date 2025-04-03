@@ -1,3 +1,4 @@
+/* CONTENEDOR PRINCIPAL - Diseño flexible con espacio entre elementos */
 .contenedor
 {
     display: flex;
@@ -5,30 +6,14 @@
 
     gap: 20px;
     justify-content: space-between;
-    align-items: flex-start;
+
+    /* Para centrar verticalmente el formulario y el contenedor de información y mapa. */
+    align-items: center;
+
     margin-top: 20px;
 }
 
-/* Formulario ocupa más espacio */
-.contacto.formulario 
-{
-    flex: 2;
-}
-
-/* Info y mapa ocupan menos espacio */
-.contacto.info, .contacto.mapa 
-{
-    flex: 1;
-}
-
-.info-mapa 
-{
-    display: flex;
-    flex-direction: column; /* Apila info y mapa */
-    flex: 1;
-    gap: 20px;
-}
-
+/* ESTILOS COMUNES PARA SECCIONES DE CONTACTO */
 .contacto
 {
     padding: 40px;
@@ -38,67 +23,80 @@
     font-family: 'Exo 2';
 }
 
-.contacto h3
+/* FORMULARIO - Ocupa más espacio que las otras secciones */
+.contacto.formulario 
 {
-    font-weight: bold;
-    font-size: 1.8em;
-    margin-bottom: 10px;
+    flex: 2;
+    min-width: 300px;
 }
 
-/* FORMULARIO */
+/* CONTENEDOR DE INFO + MAPA - Organización vertical */
+.info-mapa 
+{
+    display: flex;
+    flex-direction: column; /* Apila info y mapa */
+
+    flex: 1; /* Ocupa 1 parte del espacio */
+    gap: 20px;
+
+    min-width: 300px;
+}
+
+/* ESTILOS DEL FORMULARIO */
 .caja-formulario
 {
-    position: relative;
-    width: 100%;
-
+    width: 100%; /* Ocupa todo el ancho disponible */
 }
 
-.caja-formulario .fila50
+/* FILAS DEL FORMULARIO - Diseño flexible */
+.fila-formulario 
 {
     display: flex;
     gap: 20px;
+    margin-bottom: 15px;
 }
 
-.caja-entrada
+/* GRUPOS DE ENTRADA - Organización vertical
+* flex-direction: column; para:
+* [Etiqueta]
+*  [Campo de entrada]
+*/
+.grupo-entrada 
 {
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
-    width: 50%;
+    flex: 1;
 }
 
-.caja-formulario .fila100 .caja-entrada
+/* ESTILOS PARA CAMPOS DE ENTRADA */
+.grupo-entrada input,
+.grupo-entrada textarea 
 {
+    padding: 12px;
+    font-size: 1.1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
     width: 100%;
+    box-sizing: border-box;
 }
 
-.caja-entrada span 
+/* EFECTO AL SELECCIONAR UN CAMPO */
+.grupo-entrada input:focus,
+.grupo-entrada textarea:focus 
 {
-    margin-top: 10px;
-    margin-bottom: 5px;
-    font-weight: 500;   
+    outline: 2px solid #e63946;
+    outline-offset: -1px;
 }
 
-.caja-entrada input
+/* ESTILOS ESPECÍFICOS PARA TEXTAREA */
+.grupo-entrada textarea 
 {
-    padding: 10px;
-    font-size: 1.1em;
-    outline: none;
-    border: 1px solid #333;   
-}
-
-.caja-entrada textarea
-{
-    padding: 10px;
-    font-size: 1.1em;
-    outline: none;
-    border: 1px solid #333;  
-    resize: none;
     min-height: 220px;
-    margin-bottom: 10px;
+    resize: vertical;
 }
 
-.caja-entrada input[type="submit"]
+/* ESTILOS DEL BOTÓN DE ENVÍO */
+.grupo-entrada input[type="submit"]
 {
     background: red;
     color: white;
@@ -108,104 +106,108 @@
     font-weight: 500;
     cursor: pointer;
     padding: 14px 15px;
+
+    transition: background 0.3s;
+    width: auto;
+    border-radius: 4px;
 }
 
-.caja-entrada ::placeholder
+/* ESTILOS PARA PLACEHOLDERS */
+::placeholder 
 {
     color: #999;
+    opacity: 1;
 }
 
-/* Información */
-.info .caja-info div 
+/* SECCIÓN DE INFORMACIÓN */
+.contacto.info .caja-info 
 {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.contacto.info .caja-info p 
+{
+    margin: 0;
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+.contacto.info .caja-info a 
+{
+    color: #e63946;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.contacto.info .caja-info a:hover 
+{
+    text-decoration: underline;
+}
+
+/* ESTILOS PARA TÍTULOS DE SECCIÓN */
+.contacto h3
+{
+    font-weight: bold;
+    font-size: 1.8em;
     margin-bottom: 10px;
 }
 
-.info .caja-info div p
-{
-    font-size: 1.1em;
-}
-
-.info .caja-info div a
-{
-    text-decoration: none;
-}
-
-/* Estilos específicos para el mapa */
+/* SECCIÓN DEL MAPA */
 .contacto.mapa 
 {
     padding: 0;
-    min-height: 300px;
+    height: 300px;
+    overflow: hidden;
 
     margin-bottom: 20px;
 }
 
-.mapa iframe
+/* IFRAME DEL MAPA */
+.contacto.mapa iframe 
 {
     width: 100%;
     height: 100%;
+    border: none;
+    border-radius: 10px;
 }
 
-/* Responsive */
 
+/* 
+    DISEÑO RESPONSIVE
+    -----------------
+    Adaptación para pantallas menores de 991px 
+*/
 @media (max-width: 991px) 
 {
-    .h1
-    {
-         padding: 20px;
-    }
- 
-    .contenedor 
-    {
-         flex-direction: column;
-         width: 100%;
-         gap: 20px; /* Mantener el gap para separación vertical */
-    }
- 
-    /* Asegurar que todos los elementos hijos ocupen el 100% del ancho */
-    .contacto.formulario,
-    .contacto.info,
-    .contacto.mapa,
-    .info-mapa 
-    {
-         width: 100%;
-         flex: 1 1 100%; /* Forzar que ocupen todo el ancho */
-    }
- 
-    /* Reorganizar el contenedor de info-mapa */
-    .info-mapa 
-    {
-         display: flex;
-         flex-direction: column;
-         gap: 20px;
-    }
- 
-    .caja-formulario .fila50 
-    {
-         display: flex;
-         gap: 0;
-         flex-direction: column;
-         width: 100%;
-    }
- 
-    .caja-entrada 
-    {
-         width: 100%;
-    }
- 
-    .contacto
-     {
-         width: 100%; /* Asegurar ancho completo */
-         padding: 30px;
-         box-sizing: border-box; /* Incluir padding en el ancho total */
-    }
- 
-    .mapa 
-    {
-         width: 100%;
-         padding: 0;
-         min-height: 300px;
-    }
- }
+
+/* Cambia a disposición vertical */
+.contenedor 
+{
+    flex-direction: column;
+}
+    
+/* Ajusta anchos al 100% */
+.contacto.formulario,
+.info-mapa 
+{
+    width: 100%;
+    flex: 1 1 100%;
+}
+
+/* Cambia filas del formulario a vertical */
+.fila-formulario 
+{
+    flex-direction: column;
+    gap: 0;
+}
+    
+.contacto 
+{
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+}

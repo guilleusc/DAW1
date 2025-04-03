@@ -1,4 +1,4 @@
-// Definimos una clase ES6 para manejar la funcionalidad de las pestañas
+// Definimos una clase ES6 para manejar la funcionalidad de las pestañas.
 class Pestañas 
 {
     // Constructor de la clase que recibe los selectores de las pestañas y sus contenidos.

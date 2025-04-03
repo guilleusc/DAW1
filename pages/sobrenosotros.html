@@ -40,85 +40,126 @@
 
     <!-- Contenido principal -->
     <main>
+
+        <!-- Título principal de la página -->
         <h1>Sobre Nosotros</h1>
 
+        <!-- CONTENEDOR PRINCIPAL CON DOS SECCIONES -->
         <div class="contenedor">
             
-            <!-- Form -->
+            <!-- SECCIÓN DE FORMULARIO DE CONTACTO -->
             <section class="contacto formulario">
+
                 <h3> Cartas al director, envía tu mensaje</h3>
+
+                <!-- FORMULARIO CON VARIOS CAMPOS -->
                 <form>
 
                     <div class="caja-formulario"> 
 
-                        <div class="fila50">
-                            <div class="caja-entrada">
+                        <!-- Primera fila: Nombre y Apellidos -->
+                        <div class="fila-formulario">
+
+                            <div class="grupo-entrada">
+
                                 <span> Nombre </span>
+
                                 <input type="text" placeholder="Manolo">
+
                             </div>
 
-                            <div class="caja-entrada">
+                            <div class="grupo-entrada">
+
                                 <span>Apellidos</span>
-                                <input type="text" placeholder="Campaña">
+
+                                <input type="text" placeholder="Campaña Catoira">
+
                             </div>
+
                         </div>
 
+                        <!-- Segunda fila: Email y Teléfono -->
+                        <div class="fila-formulario">
 
-                        <div class="fila50">
-                            <div class="caja-entrada">
+                            <div class="grupo-entrada">
+
                                 <span>Email</span>
+
                                 <input type="text" placeholder="manolocampaña@email.com">
+
                             </div>
 
-                            <div class="caja-entrada">
+                            <div class="grupo-entrada">
+
                                 <span>Teléfono móvil</span>
+
                                 <input type="text" placeholder="+34 653 95 76 90">
+
                             </div>
+
                         </div>
 
-                        <div class="fila100">
-                            <div class="caja-entrada">
+                        <!-- Tercera fila: Área de texto para el mensaje -->
+                        <div class="fila-formulario">
+
+                            <div class="grupo-entrada">
+
                                 <span>Texto</span>
-                                <textarea placeholder="Escribe tu  mensaje.">  </textarea>
+
+                                <textarea placeholder="Estimado Director: [Escribe aquí tu carta con un máximo de 250 palabras. Incluye tu opinión sobre el tema de manera clara y concisa. Las cartas deben contener argumentos fundamentados, evitar ataques personales y aportar valor al debate público. No olvides indicar tu nombre completo y datos de contacto (que no se publicarán). Las cartas podrán ser editadas por razones de espacio y claridad.]"></textarea>
+
                             </div>
+
                         </div>
 
-                        <div class="fila100">
-                            <div class="caja-entrada">
+                        <!-- Cuarta fila: Botón de envío -->
+                        <div class="fila-formulario">
+
+                            <div class="grupo-entrada">
+
                                 <input type="submit" value="Enviar"> 
+
                             </div>
+
                         </div>
 
                     </div>
 
                 </form>
+
             </section>
 
+            <!-- CONTENEDOR DE INFORMACIÓN Y MAPA -->
             <div class="info-mapa">
 
-                <!-- Caja de información-->
+                <!-- SECCIÓN DE INFORMACIÓN DE CONTACTO -->
                 <section class="contacto info"> 
                 
                     <h3>Información de contacto</h3>
+
                     <div class="caja-info">
+
                         <div>
-                            <p><strong>Dirección:</strong> <br> Rúa Fernando III O Santo, Santiago de Compostela <br>ESPAÑA</p>
+                            <p><strong>Dirección:</strong> <br> Rúa Fernando III O Santo, 6, Santiago de Compostela <br>ESPAÑA</p>
                         </div>
 
                         <div>
-                            <p><strong>Email:</strong> <br> <a href="mailto:pander@email.com">pander@email.com</a></p>
+                            <p><strong>Email:</strong> <br> <a href="mailto:desmarcados@email.com">desmarcados@email.com</a></p>
                         </div>
 
                         <div>
                             <p><strong>Teléfono:</strong> <br> <a href="tel:+34678221945">+34 678 22 19 45</a> <br> <a href="tel:+34678221945">+34 676 98 19 67</a></p>
                         </div>
+
                     </div>
 
                 </section>
 
-                <!-- Mapa -->
+                <!-- SECCIÓN DEL MAPA DE GOOGLE -->
                 <section class="contacto mapa">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2446.9877340928642!2d-3.690913989445996!3d40.45304275331095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228e23705d39f%3A0xa8fff6d26e2b1988!2sEstadio%20Santiago%20Bernab%C3%A9u!5e1!3m2!1ses!2ses!4v1743015516146!5m2!1ses!2ses" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2425.3098554385074!2d-8.550847124732696!3d42.87118660265841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2efe3e426d33e3%3A0x6522f106892efd60!2sR%C3%BAa%20de%20Fernando%20III%20o%20Santo%2C%20Santiago%20de%20Compostela%2C%2015701%20Santiago%20de%20Compostela%2C%20A%20Coru%C3%B1a!5e1!3m2!1ses!2ses!4v1743682624961!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
                 </section>
 
             </div>

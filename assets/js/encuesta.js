@@ -35,14 +35,14 @@ function mostrarEncuesta(tarjeta)
  * 
  * @example
  * // En HTML:
- * // <div onclick="return votar(this, 'encuesta1')">Opción</div>
+ * // <div onclick="votar(this, 'encuesta1')">Opción</div>
  */
 function votar(opcion, idEncuesta) 
 {
 
     // Verificar si ya se votó
     if (votoRealizado) 
-        {
+    {
         alert("¡Ya has realizado tu voto! Solo se permite votar una vez.");
         return false;
     }

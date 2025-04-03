@@ -1,21 +1,27 @@
-/* Contenedor principal que agrupa la info del equipo y el container */
+/* CONTENEDOR PRINCIPAL - FLEXIBLE */
 .contenedor-equipo 
 {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2rem; /* Espaciado entre cajas */
+    flex-wrap: wrap;
+
+    /* Distribuye los elementos dentro de un contenedor con espacio igual entre ellos, 
+    pero también deja espacio antes del primer elemento y después del último. */
+    justify-content: space-around;
     
-    width: 100%;
+    align-items: center;
+    align-content: center;
+
+    gap: 1.5rem; /* Espaciado entre cajas */
+    width: 100%; /* Ocupa el 100% del ancho disponible */
 }
 
 /* Caja izquierda con el escudo y nombre del equipo */
 .equipo-info 
 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    display: flex; /* Flexbox para alinear internamente */
+    flex-direction: column; /* Organiza los elementos en columna */
+    justify-content: space-between; /* Distribuye el espacio vertical */
+    align-items: center; /* Centra horizontalmente */
     gap: 15px;
 
     background: white;
@@ -50,6 +56,7 @@
     font-family: 'Exo 2', sans-serif; /* Mantener la coherencia con el diseño */
 }
 
+ /* Contenedor principal del sistema de pestañas, usando Grid para dividir espacio entre controles y contenido. */
 .contenedor
 {
     background-color: black;
@@ -59,20 +66,24 @@
 
     font-size: 16px;
 
-    display: grid;
-    grid-template-columns: 2fr 9fr;
+    display: grid; /* Usa CSS Grid */
+    grid-template-columns: 2fr 9fr; /* Dos columnas (20% y 80%) */
 
     box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+
+    margin-bottom: 20px;
 }
 
+/* Contiene los botones de las pestañas en disposición vertical. */
 .tabs
 {
-    color: white;
-    display: flex;
+    color: white; /* Texto blanco */
+    display: flex; /* Flexbox para alinear */
     flex-direction: column;
     justify-content: space-around;
 }
 
+/* Elementos de pestaña */
 h3
 {
     height: 33.33%;
@@ -83,6 +94,7 @@ h3
     cursor: pointer;
 }
 
+/* Contenido de pestañas. */
 .tab-content
 {
     background-color: white;
@@ -96,6 +108,7 @@ h3
     height: 100%; /* Asegura que use todo el espacio disponible */
 }
 
+ /*  títulos dentro del contenido de las pestañas. */
 .tab-content h4
 {
     font-size: 1.8em;
@@ -104,6 +117,7 @@ h3
 
 }
 
+ /* Estilo para los párrafos dentro del contenido. */
 .tab-content p
 {
     text-align:justify;
@@ -116,12 +130,13 @@ h3
     font-family: 'Exo 2';
 }
 
+/* Destaca partes importantes dentro de los párrafos. */
 .tab-content p span 
 {
     font-weight: bold;
 }
 
-
+/* Contenedores individuales para cada pestaña. */
 .tab-content div 
 {
     text-align: justify;
@@ -129,17 +144,20 @@ h3
     display: none;
 }
 
+/* Panel activo. */
 .tab-content .active
 {
     display: block;
 }
 
+/* Resalta visualmente la pestaña activa. */
 .tabs .active 
 {
     background-color: black; /* Mantiene el fondo negro */
     position: relative;
 }
 
+ /* Añade un indicador visual (barra blanca) a la pestaña activa. */
 .tabs .active::after 
 {
     content: "";
@@ -185,17 +203,85 @@ table tr:nth-child(even)
     background-color: #f8f8f8;
 }
 
+.estadisticas-equipo 
+{
+    background-color: #e0e0e0; /* Fondo gris claro */
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 1rem;
+
+    max-width: 500px; /* Evita que se expanda demasiado */
+
+    margin-bottom: 20px;
+
+    overflow: auto;
+}
+
+.estadisticas-equipo h3 
+{
+    font-size: 1.6rem;
+    color: #202238;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.estadisticas-flex 
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+}
+
+.estadistica 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.estadistica .numero 
+{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #202238;
+}
+
+.estadistica .texto 
+{
+    font-size: 1.2rem;
+    color: #555;
+    font-family: 'Exo 2', sans-serif;
+}
+
 /* Diseño responsive */
 @media screen and (max-width: 768px) 
 {
-    .equipo-container 
+    .contenedor-equipo 
     {
-        flex-direction: column;
+        flex-direction: column; /* Apila elementos */
         align-items: center;
     }
 
-    .equipo-info, .container 
+    .equipo-info, .contenedor
     {
         width: 90%;
+    }
+
+    .estadisticas-grid 
+    {
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .estadistica 
+    {
+        flex: 1 1 45%;
     }
 }
