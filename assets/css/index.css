@@ -38,17 +38,18 @@ body {
     display: flex;
     position: relative;
     align-items: center; /* Asegura que la imagen se mantenga centrada */
+    overflow: hidden;
 }
 .cabecera figure img {
     max-height: 100%; /* Ajusta la imagen a la altura del contenedor */
     max-width: 100%; /* Evita que la imagen desborde */
     height: auto; /* Mantiene la proporción */
     width: auto; /* Permite que la imagen se reduzca proporcionalmente */
-    animation: ascender 2s ease-out forwards;
-    /* Posición inicial: 20px por DEBAJO de su lugar natural */
-    transform: translateY(15px);
+    animation: ascender 1.5s ease-out forwards;
+    /* Posición inicial: 40px por DEBAJO de su lugar natural */
+    transform: translateY(40px);
     /* Opcional: transparencia inicial para efecto*/
-    opacity: 0.8;
+    opacity: 0.3;
 }
 
 @keyframes ascender {

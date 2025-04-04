@@ -1,5 +1,5 @@
 /* Secciones de cada jornada */
-.jornada {
+.jornada, .jornadaSin {
     width: 37vw; /* Cada jornada ocupa casi la mitad del ancho */
     align-items: center;
     background-color: #fff;
@@ -10,7 +10,7 @@
 }
 
 /* Alternar posición de las jornadas */
-.jornada:nth-child(even) {
+.jornada:nth-child(even), .jornadaSin:nth-child(even) {
     float: left;
     clear: left;/* Soluciona que al activar un desplegable en una
                     jornada, desajustando las alturas entre tablas
@@ -19,7 +19,7 @@
                     del float */
 } 
 
-.jornada:nth-child(odd) {
+.jornada:nth-child(odd), .jornadaSin:nth-child(odd){
     float: right;
     clear: right; 
 }
@@ -79,7 +79,7 @@ td:nth-child(3) {
     
 
     /* Desactivar floats */
-    .jornada {
+    .jornada, .jornadaSin {
         float: none;
         width: 100%;
         margin: 0px;
