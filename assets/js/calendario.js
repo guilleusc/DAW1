@@ -7,7 +7,7 @@ jornadas.forEach(jornada => {
 });
 
 function cargarJornada(jornada) {
-    fetch("../assets/js/jornada1.json") // Carga el JSON desde un archivo externo
+    fetch("../data/json/jornada1.json") // Carga el JSON desde un archivo externo
         .then(r => r.json()) // Convierte la respuesta a JSON
         .then(jsonObj => {
             // Iteramos sobre cada partido, asumiendo que el orden del JSON coincide con el de la tabla

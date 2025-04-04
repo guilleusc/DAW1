@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plantillas>
+    <!-- Real Madrid -->
+    <equipo nombre="realmadrid">
+        <jugador>
+            <posicion>Portero</posicion>
+            <nombre>Thibaut Courtois</nombre>
+            <numero>1</numero>
+        </jugador>
+        <jugador>
+            <posicion>Defensa</posicion>
+            <nombre>David Alaba</nombre>
+            <numero>4</numero>
+        </jugador>
+        <jugador>
+            <posicion>Defensa</posicion>
+            <nombre>Dani Carvajal</nombre>
+            <numero>2</numero>
+        </jugador>
+        <jugador>
+            <posicion>Centrocampista</posicion>
+            <nombre>Luka Modrić</nombre>
+            <numero>10</numero>
+        </jugador>
+        <jugador>
+            <posicion>Centrocampista</posicion>
+            <nombre>Jude Bellingham</nombre>
+            <numero>5</numero>
+        </jugador>
+        <jugador>
+            <posicion>Delantero</posicion>
+            <nombre>Vinícius Jr.</nombre>
+            <numero>7</numero>
+        </jugador>
+        <jugador>
+            <posicion>Delantero</posicion>
+            <nombre>Rodrygo</nombre>
+            <numero>11</numero>
+        </jugador>
+    </equipo>
+
+    <!-- Barcelona -->
+    <equipo nombre="barcelona">
+        <jugador>
+            <posicion>Portero</posicion>
+            <nombre>Marc-André ter Stegen</nombre>
+            <numero>1</numero>
+        </jugador>
+        <jugador>
+            <posicion>Defensa</posicion>
+            <nombre>Ronald Araújo</nombre>
+            <numero>4</numero>
+        </jugador>
+        <jugador>
+            <posicion>Defensa</posicion>
+            <nombre>Jules Koundé</nombre>
+            <numero>23</numero>
+        </jugador>
+        <jugador>
+            <posicion>Centrocampista</posicion>
+            <nombre>Pedri</nombre>
+            <numero>8</numero>
+        </jugador>
+        <jugador>
+            <posicion>Centrocampista</posicion>
+            <nombre>Gavi</nombre>
+            <numero>6</numero>
+        </jugador>
+        <jugador>
+            <posicion>Delantero</posicion>
+            <nombre>Robert Lewandowski</nombre>
+            <numero>9</numero>
+        </jugador>
+        <jugador>
+            <posicion>Delantero</posicion>
+            <nombre>Raphinha</nombre>
+            <numero>22</numero>
+        </jugador>
+    </equipo>
+
+    <!-- Equipo Genérico -->
+    <equipo nombre="generico">
+        <jugador>
+            <posicion>Portero</posicion>
+            <nombre>Portero Ejemplo</nombre>
+            <numero>1</numero>
+        </jugador>
+        <jugador>
+            <posicion>Defensa</posicion>
+            <nombre>Defensa Central</nombre>
+            <numero>4</numero>
+        </jugador>
+        <jugador>
+            <posicion>Defensa</posicion>
+            <nombre>Lateral Derecho</nombre>
+            <numero>2</numero>
+        </jugador>
+        <jugador>
+            <posicion>Centrocampista</posicion>
+            <nombre>Mediocentro</nombre>
+            <numero>6</numero>
+        </jugador>
+        <jugador>
+            <posicion>Centrocampista</posicion>
+            <nombre>Mediapunta</nombre>
+            <numero>10</numero>
+        </jugador>
+        <jugador>
+            <posicion>Delantero</posicion>
+            <nombre>Delantero Centro</nombre>
+            <numero>9</numero>
+        </jugador>
+        <jugador>
+            <posicion>Delantero</posicion>
+            <nombre>Extremo Izquierdo</nombre>
+            <numero>7</numero>
+        </jugador>
+    </equipo>
+    
+</plantillas>
