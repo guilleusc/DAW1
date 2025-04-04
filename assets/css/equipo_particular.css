@@ -60,9 +60,11 @@
 .contenedor
 {
     background-color: black;
-    width: 95vmin;
-    min-width: 30em;
-    height: 30em;
+
+    /* Ocupa el 90% del ancho del padre */
+    width: 90%;
+
+    height: auto;
 
     font-size: 16px;
 
@@ -274,7 +276,7 @@ table tr:nth-child(even)
         width: 90%;
     }
 
-    .estadisticas-grid 
+    .estadisticas-flex
     {
         flex-wrap: wrap;
         gap: 2rem;
@@ -283,5 +285,25 @@ table tr:nth-child(even)
     .estadistica 
     {
         flex: 1 1 45%;
+    }
+
+    /* Tabla responsiva */
+    .tab-content 
+    {
+        padding: 0.5em;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    table 
+    {
+        width: auto; /* Ancho según contenido */
+        min-width: 100%; /* Mínimo el 100% del contenedor */
+    }
+
+    td, th 
+    {
+        padding: 8px 4px;
+        white-space: nowrap; /* Evita saltos de línea */
     }
 }
