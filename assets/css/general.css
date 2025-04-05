@@ -178,7 +178,14 @@ main
 
 
 /* ================== ESTILOS RESPONSIVOS ================== */
-
+/* Para que al volver de la ventaña pequeña aparezcan de
+nuevo las opciones de menú como consecuencia de los efectos 
+del JavaScript */
+@media screen and (min-width: 992px) { 
+    .cabecera ul {
+        display: flex !important;
+    }
+}
 /* Estilos para pantallas pequeñas (máx. 992px de ancho) */
 /* Estilos Responsivos para el ancho */
 @media screen and (max-width: 992px) {
