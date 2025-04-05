@@ -74,32 +74,28 @@ function anhadirListeners(td) {
     // Evento al hacer click en la celda
     td.addEventListener('click', function(e) {
       
-      const rect = this.parentNode.nextElementSibling; // Selecciona la fila siguiente
+      const filaGoles = this.parentNode.nextElementSibling; // Selecciona la fila siguiente
 
       // Si la fila ya está activa, la cerramos
-      if(rect.getAttribute("id") === "activo"){
+      if(filaGoles.getAttribute("id") === "activo"){
         flecha.textContent = "▾"; // Cambia la flecha hacia abajo
-        let celda = rect.getElementsByTagName("td")[0]; // Obtiene la celda interna
-        //rect.removeChild(celda); // Elimina la celda
-        rect.style.display = "none";
-        rect.removeAttribute("id"); // Quita el "id" para desactivar
+        filaGoles.style.display = "none"; // Hace desaparecer la celda
+        filaGoles.removeAttribute("id"); // Quita el "id" para desactivar
 
       } else {
         // Cerramos cualquier otro desplegable activo antes de abrir uno nuevo
         let activo = document.getElementById("activo");
-        if(activo != null){
-          let celda = activo.getElementsByTagName("td")[0];
-          flecha.textContent = "▾"; // Resetea la flecha
-          activo.style.display = "none";
-          activo.removeAttribute("id");
+        if(activo != null){ // Había un desplegable abierto
+          activo.style.display = "none"; // Hace desaparecer el desplegable abierto
+          activo.removeAttribute("id"); // Le quitamos el 'id' de activo
         }
 
         // Ahora activamos el desplegable actual
-        rect.setAttribute("id", "activo");
+        filaGoles.setAttribute("id", "activo");
         flecha.textContent = "▴"; // Flecha hacia arriba
         
         // Hacemos parecer el desplegable
-        rect.style.display = "table-row";
+        filaGoles.style.display = "table-row";
       }
     });
 
