@@ -47,18 +47,12 @@ body
 
 .subencabezado p
 {
-    font-weight: 700;
     text-transform: capitalize;
     margin-right: 10px;
-}
-
-.subencabezado span
-{
-    color: #555;
-    font-weight: 300;
     border-right: 1px solid #ccc;
     padding-right: 10px;
 }
+
 
 /* Texto importante en subtítulo */
 .subencabezado .importante
@@ -85,7 +79,6 @@ body
 /* Lista de noticias destacadas */
 .lista-noticias 
 {
-    list-style-type: none;
     padding: 0;
     gap: 10px;
     margin-bottom: 10px;
@@ -105,7 +98,7 @@ a:hover
     text-decoration: underline; /* Añadir subrayado */
 }
 
-.noticia p 
+.lista-noticias li
 {
     font-family: 'Exo 2';
     font-weight: bold;
@@ -263,7 +256,7 @@ blockquote p
         gap: 20px;
     }
 
-    .izquierda, .derecha 
+    .introduccion-noticia, .derecha 
     {
         width: 100%;
     }
