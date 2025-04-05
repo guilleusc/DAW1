@@ -199,7 +199,7 @@ blockquote p
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
-.tarjeta-encuesta p 
+#explicacion
 {
     font-family: 'Exo 2';
     font-weight: 400; /* Peso normal para el párrafo */

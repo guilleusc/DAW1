@@ -30,6 +30,12 @@
     min-width: 300px;
 }
 
+label {
+    display: block; /* Hace que el label ocupe toda la línea */
+    margin-bottom: 8px; /* Espacio entre label e input */
+    font-weight: bold;
+  }
+
 /* CONTENEDOR DE INFO + MAPA - Organización vertical */
 .info-mapa 
 {
@@ -96,7 +102,7 @@
 }
 
 /* ESTILOS DEL BOTÓN DE ENVÍO */
-.grupo-entrada input[type="submit"]
+input[type="submit"]
 {
     background: red;
     color: white;
@@ -120,7 +126,7 @@
 }
 
 /* SECCIÓN DE INFORMACIÓN */
-.contacto.info .caja-info 
+.info
 {
     display: flex;
     flex-direction: column;
@@ -128,21 +134,21 @@
     gap: 15px;
 }
 
-.contacto.info .caja-info p 
+.info p 
 {
     margin: 0;
     font-size: 1.1em;
     line-height: 1.5;
 }
 
-.contacto.info .caja-info a 
+.info a 
 {
     color: #e63946;
     text-decoration: none;
     transition: color 0.2s;
 }
 
-.contacto.info .caja-info a:hover 
+.info a:hover 
 {
     text-decoration: underline;
 }
@@ -156,7 +162,7 @@
 }
 
 /* SECCIÓN DEL MAPA */
-.contacto.mapa 
+.mapa 
 {
     padding: 0;
     height: 300px;
@@ -166,7 +172,7 @@
 }
 
 /* IFRAME DEL MAPA */
-.contacto.mapa iframe 
+.mapa iframe 
 {
     width: 100%;
     height: 100%;
@@ -190,7 +196,7 @@
 }
     
 /* Ajusta anchos al 100% */
-.contacto.formulario,
+.formulario,
 .info-mapa 
 {
     width: 100%;
