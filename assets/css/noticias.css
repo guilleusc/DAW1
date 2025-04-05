@@ -2,6 +2,13 @@ aside div, .articulo {
     background-color: #f9f3f3;
 }
 
+/* Modificación para igualar la cabecera a otras páginas
+como consecuencia de las modificaciones de bootstrap */
+.cabecera p{
+    margin: 0px;
+    line-height: 27px ;
+}
+
 .lista {
     font-family: 'Exo 2';
 }
